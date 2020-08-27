@@ -15,14 +15,14 @@ dependencies:
   - pandas>=1.0.3
   - pandas-flavor>=0.2.0
   - pip>=20.0.2
-  - pytorch>=1.4.0
   - rdkit>=2020.03.1.0
   - scikit-learn>=0.22.2.post1
   - scipy>=1.4.1
   - tensorboardX>=2.0
   - tensorflow>=1.13.1
-  - torchvision>=0.5.0
   - tqdm>=4.45.0
+  - pytorch=1.2.0=py3.6_cuda10.0.130_cudnn7.6.2_0
+  - torchvision=0.4.0=py36_cu100
   - pip:
     - typed-argument-parser>=1.5.4
     - git+https://github.com/bp-kelley/descriptastorus

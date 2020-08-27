@@ -44,7 +44,8 @@ def run_training(args: TrainArgs, logger: Logger = None) -> List[float]:
     debug(args)
 
     # Save args
-    args.save(os.path.join(args.save_dir, 'args.json'))
+    args.save(os.path.join(args.save_dir, 'args.json'), with_reproducibility=False)
+    # args.save(os.path.join(args.save_dir, 'args.json'))
 
     # Set pytorch seed for random initial weights
     torch.manual_seed(args.pytorch_seed)
